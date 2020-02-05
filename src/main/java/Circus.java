@@ -21,17 +21,18 @@ public class Circus {
         for (Equipment e : equipments) {
             if (e.getValue() <= 5) {
                 System.out.println("Ignoring low value item: " + e.getValue());
-            } else {
-                total += e.getValue();
-                System.out.println("Adding item value: " + e.getValue());
-                // some 
-                // more
-                // code 
-                // here ...
+                continue;
             }
+            total += e.getValue();
+            System.out.println("Adding item value: " + e.getValue());
+            // some
+            // more
+            // code
+            // here ...
         }
-        return total;
     }
+        return total;
+}
 
     public static void main(String[] args) {
         makeAnimalsTalk();
